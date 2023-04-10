@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formula One Points Tracker</title>
+    </head>
+    <body>
+        <h1>Formula One Points Tracker</h1>
+        <p>Here are the current points standings:</p>
+        <ul>
+            {% for row in data %}
+            <li>{{ row['name'] }}: {{ row['points'] }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
